@@ -6,12 +6,14 @@ public class Multiplay {
         System.out.print("Enter a number between 0 and 1000: ");
         int num = scanning.nextInt();
         int ans = 1;
+        int num1 = num;
+
         while(num>0){
             int multiply = num % 10;
             ans *= multiply;
             num /= 10;
 
         }
-        System.out.println("The multiplication of all digits in " + num + " is " + ans);
+        System.out.println("The multiplication of all digits in " + num1 + " is " + ans);
     }
 }
